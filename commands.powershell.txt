@@ -1,6 +1,6 @@
 Compress-Archive -Path main.js -DestinationPath ..\example.zip
 aws s3api create-bucket --bucket=terraform-my-first-serverless-app --create-bucket-configuration LocationConstraint=eu-west-1
-aws s3 cp example.zip s3://terraform-serverless-example/v1.0.0/example.zip
+aws s3 cp example.zip s3://terraform-my-first-serverless-app/v1.0.0/example.zip
 terraform init
 terraform apply
 yes
